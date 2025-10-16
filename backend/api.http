@@ -1,0 +1,10 @@
+### Hent alle spørsmål
+GET http://localhost:8080/api/questions
+
+### Send inn quiz-svar
+POST http://localhost:8080/api/submit
+Content-Type: application/json
+
+{
+  "answers": { "1": 1 }
+}
