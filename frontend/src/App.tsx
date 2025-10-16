@@ -9,17 +9,16 @@ function App() {
     const { data, isLoading, error } = useQuestions()
     const submit = useSubmitQuiz()
 
-    const questions = data ?? []
     const [index, setIndex] = useState(0);
     const [answers, setAnswers] = useState<Record<number, number>>({})
 
     if (isLoading) return <p>Laster spørsmål...</p>
     if (error) return <p>Feil: {(error as Error).message}</p>
-    if (questions.length === 0) return <p>Fant ingen spørsmål.</p>
+    if (!data || data.length === 0) return <p>Fant ingen spørsmål.</p>
 
-    const question = questions[index]
+    const question = data[index]
     const selected = answers[question.id]
-    const isLast = index === questions.length - 1
+    const isLast = index === data.length - 1
 
     const handleSelect = (choiceId: number) => {
         setAnswers(prev => ({...prev, [question.id]: choiceId }))
@@ -42,7 +41,7 @@ function App() {
 
         <NextButton
             index={index}
-            total={questions.length}
+            total={data.length}
             canProceed={!!selected}
             isLast={isLast}
             isSubmitting={submit.isPending}

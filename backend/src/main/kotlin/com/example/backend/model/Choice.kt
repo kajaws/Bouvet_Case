@@ -1,6 +1,7 @@
 package com.example.backend.model
 
 import com.fasterxml.jackson.annotation.JsonIgnore
+import com.fasterxml.jackson.annotation.JsonProperty
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
@@ -18,6 +19,7 @@ data class Choice(
     @Column(nullable = false)
     val text: String,
 
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @Column(nullable = false)
     var correct: Boolean = false,
 
