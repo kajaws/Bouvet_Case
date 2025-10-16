@@ -20,6 +20,4 @@ class QuizService(private val repo: QuestionRepository) {
         }
         return QuizResult(total = questions.size, correct = correct)
     }
-
-
 }
