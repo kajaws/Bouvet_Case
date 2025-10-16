@@ -1,0 +1,17 @@
+# IntelliJ / IDE
+.idea/
+*.iml
+*.iws
+
+# macOS
+.DS_Store
+
+# Node / frontend
+node_modules/
+dist/
+.env
+
+# Gradle / backend
+.gradle/
+build/
+out/
