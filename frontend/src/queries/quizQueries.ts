@@ -1,6 +1,6 @@
 import { useQuery, useMutation } from '@tanstack/react-query'
 import {get, post} from "../api/api.ts";
-import type {Question, QuizResult, QuizSubmission} from "./types.ts";
+import type {Question, QuizResult, QuizSubmission} from "../types/types.ts";
 
 export function useQuestions() {
     return useQuery({

@@ -1,0 +1,17 @@
+.quiz-fieldset {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.quiz-legend {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.quiz-radio {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}

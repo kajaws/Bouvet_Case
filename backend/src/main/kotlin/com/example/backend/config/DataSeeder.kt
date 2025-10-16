@@ -6,7 +6,6 @@ import com.example.backend.repository.ChoiceRepository
 import com.example.backend.repository.QuestionRepository
 import jakarta.transaction.Transactional
 import org.springframework.boot.CommandLineRunner
-import org.springframework.core.annotation.Order
 import org.springframework.stereotype.Component
 
 private data class C(val text: String, val correct: Boolean)
