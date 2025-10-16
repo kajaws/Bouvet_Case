@@ -22,7 +22,7 @@ class DataSeeder(
         if(questionRepo.count() > 0) return
 
         val seed = listOf(
-            Q("Hva er hovedstaden i Sverige?", listOf(
+            Q("Hva er hovedstaden i Norge?", listOf(
                 C("Oslo", true), C("Bergen", false), C("Trondheim", false), C("Stavanger", false)
             )),
             Q("Hvor mange bein har en edderkopp?", listOf(

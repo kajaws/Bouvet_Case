@@ -33,6 +33,7 @@ function App() {
 
   return (
     <div className="quiz-container">
+        <h1>Quiz!</h1>
         <QuestionGroup
             question={question}
             selectedChoiceId={selected}

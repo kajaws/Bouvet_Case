@@ -1,5 +1,6 @@
 import type {Question} from "../../types/types.ts";
 import {Fieldset, Radio} from "@digdir/designsystemet-react";
+import './QuestionGroup.css'
 
 type Props = {
     question: Question

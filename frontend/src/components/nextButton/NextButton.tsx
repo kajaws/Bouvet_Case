@@ -1,4 +1,5 @@
 import {Button} from "@digdir/designsystemet-react";
+import './NextButton.css'
 
 type Props = {
     index: number
